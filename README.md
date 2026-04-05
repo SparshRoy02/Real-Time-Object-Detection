@@ -1,14 +1,14 @@
-# Real Time Object Detection
+## Real Time Object Detection
 
 A deep learning–based **Real Time Object Detection System** implemented using **YOLOv8**. The system is capable of detecting and localizing multiple objects in images and video streams with **high accuracy and real-time speed**.
 
-## Introduction
+### Introduction
 
 Object detection is a core task in computer vision that involves identifying objects within an image or video frame and drawing bounding boxes around them. Real-time object detection is crucial in applications such as autonomous driving, surveillance, robotics, and traffic monitoring, where quick and accurate decisions are required.
 
 This project focuses on implementing a **Real Time Object Detection System using YOLOv8**, a state-of-the-art deep learning model that provides an excellent balance between detection accuracy and inference speed.
 
-## Problem Statement
+### Problem Statement
 
 Traditional object detection techniques:
 - Require multiple processing stages
@@ -22,20 +22,20 @@ The challenge is to design a system that:
 - Works efficiently on images and video streams
 - Is scalable and cost-effective
 
-## Objectives
+### Objectives
 - To design and implement a real-time object detection system
 - To utilize YOLOv8 for fast and accurate detection
 - To detect multiple objects in a single frame
 - To analyze the performance of YOLOv8 on images and videos
 - To evaluate accuracy, speed, and limitations of the system
 
-## Motivation
+### Motivation
 
 With the increasing demand for intelligent vision systems, there is a strong need for object detection models that are both fast and accurate. Traditional methods are unable to meet real-time constraints.
 
 YOLOv8 introduces architectural improvements such as anchor-free detection and decoupled heads, making it suitable for modern real-world applications. This project explores YOLOv8’s capabilities and practical performance.
 
-## Technology Stack
+### Technology Stack
 - **Programming Language:** Python  
 - **Deep Learning Framework:** PyTorch  
 - **Object Detection Model:** YOLOv8 (Ultralytics)  
@@ -43,7 +43,7 @@ YOLOv8 introduces architectural improvements such as anchor-free detection and d
 - **Dataset:** COCO Dataset  
 - **Training Platform:** Google Colab (GPU) 
 
-## Overview of YOLO
+### Overview of YOLO
 YOLO (You Only Look Once) is a single-stage object detection algorithm that:
 - Divides the input image into grids
 - Predicts bounding boxes and class probabilities in one pass
@@ -52,7 +52,7 @@ YOLO (You Only Look Once) is a single-stage object detection algorithm that:
 
 YOLO processes the entire image at once, making it significantly faster than traditional two-stage detectors.
 
-## Why YOLOv8?
+### Why YOLOv8?
 YOLOv8 is chosen due to the following advantages:
 - Anchor-free object detection
 - Decoupled classification and localization heads
@@ -61,7 +61,7 @@ YOLOv8 is chosen due to the following advantages:
 - Better performance on multi-scale objects
 - Supports detection, segmentation, and classification tasks
 
-## System Architecture
+### System Architecture
 The YOLOv8-based object detection system consists of:
 - **Backbone:** CSPDarknet for feature extraction  
 - **Neck:** PAN-FPN for feature fusion at multiple scales  
@@ -71,20 +71,20 @@ The YOLOv8-based object detection system consists of:
 
 This architecture enables accurate and fast object detection.
 
-## Dataset Description
+### Dataset Description
 - Dataset is based on **COCO (Common Objects in Context)**
 - Contains multiple object categories such as people, animals, and daily-use objects
 - Images are annotated using bounding boxes in YOLO format
 - Dataset is split into training and validation sets
 
-## Implementation Methodology
+### Implementation Methodology
 - YOLOv8 Nano model is used for efficient training
 - Pre-trained weights are fine-tuned on the dataset
 - Training performed using GPU for faster convergence
 - OpenCV is used for visualization of detection results
 - Predictions include class label, confidence score, and bounding box
 
-## Model Training
+### Model Training
 Training process:
 1. Install Ultralytics YOLOv8 package  
 2. Load pre-trained YOLOv8 model  
@@ -94,7 +94,7 @@ Training process:
 
 Training is conducted using **Google Colab with GPU support**.
 
-## Real-Time Object Detection
+### Real-Time Object Detection
 The trained model supports:
 - Image-based object detection
 - Video-based object detection
@@ -102,19 +102,19 @@ The trained model supports:
 
 Detected objects are displayed with bounding boxes, class names, and confidence scores.
 
-## Performance Analysis
+### Performance Analysis
 - Performs well on images and video frames
 - Successfully detects multiple objects in a single frame
 - Maintains real-time inference speed
 
-## Limitations
+### Limitations
 - Reduced accuracy for very small objects
 - Difficulty handling occluded objects
 - Performance decreases in cluttered backgrounds
 - Requires GPU for optimal real-time performance
 - Sensitive to hyperparameter selection
 
-## Applications
+### Applications
 - Smart surveillance systems
 - Autonomous vehicles
 - Traffic monitoring
@@ -122,12 +122,12 @@ Detected objects are displayed with bounding boxes, class names, and confidence 
 - Retail analytics
 - Industrial automation
 
-## Future Enhancements
+### Future Enhancements
 - Improve small object detection accuracy
 - Deploy model on edge devices
 - Integrate object tracking
 - Optimize using TensorRT / ONNX
 - Enhance occlusion handling
 
-## Conclusion
+### Conclusion
 This project presents a real-time object detection system using **YOLOv8**, achieving high accuracy and fast inference for detecting multiple objects in images and video streams. The results demonstrate YOLOv8’s effectiveness in balancing speed and precision for real-world applications. Although challenges such as small object detection and occlusion remain, the system proves to be reliable and scalable, with strong potential for further enhancements and deployment in practical computer vision applications.
