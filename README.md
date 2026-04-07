@@ -4,36 +4,39 @@ A deep learning–based **Real Time Object Detection System** implemented using 
 
 ### Introduction
 
-Object detection is a core task in computer vision that involves identifying objects within an image or video frame and drawing bounding boxes around them. Real-time object detection is crucial in applications such as autonomous driving, surveillance, robotics, and traffic monitoring, where quick and accurate decisions are required.
+Object detection is a core task in **computer vision** that involves identifying objects within an image or video frame and drawing **bounding boxes** around them. Real-time object detection is crucial in applications such as **autonomous driving, surveillance, robotics**, and **traffic monitoring**, where quick and accurate decisions are required.
 
-This project focuses on implementing a **Real Time Object Detection System using YOLOv8**, a state-of-the-art deep learning model that provides an excellent balance between detection accuracy and inference speed.
+This project focuses on implementing a **Real Time Object Detection System using YOLOv8**, a **state-of-the-art deep learning model** that provides an excellent balance between detection accuracy and inference speed.
 
 ### Problem Statement
-
 Traditional object detection techniques:
-- Require multiple processing stages
-- Are computationally expensive
-- Fail to achieve real-time performance
-- Perform poorly when detecting multiple objects simultaneously
+- Require **multiple processing stages**
+- Are **computationally expensive**
+- Fail to achieve **real-time performance**
+- Perform poorly when detecting **multiple objects simultaneously**
 
 The challenge is to design a system that:
-- Detects multiple objects in real time
-- Maintains high detection accuracy
-- Works efficiently on images and video streams
-- Is scalable and cost-effective
+- Detects **multiple objects in real time**
+- Maintains **high detection accuracy**
+- Works efficiently on **images and video streams**
+- Is **scalable and cost-effective**
 
 ### Objectives
-- To design and implement a real-time object detection system
-- To utilize YOLOv8 for fast and accurate detection
-- To detect multiple objects in a single frame
-- To analyze the performance of YOLOv8 on images and videos
-- To evaluate accuracy, speed, and limitations of the system
+- Design and implement a **real-time object detection system**
+- Utilize **YOLOv8 for fast and accurate detection**
+- Detect **multiple objects in a single frame**
+- Analyze the performance of YOLOv8 on **images and videos**
+- Evaluate **accuracy, speed, and limitations of the system**
 
 ### Motivation
 
-With the increasing demand for intelligent vision systems, there is a strong need for object detection models that are both fast and accurate. Traditional methods are unable to meet real-time constraints.
+With the increasing demand for **intelligent vision systems**, there is a strong need for object detection models that are both **fast** and **accurate**. Traditional methods are unable to meet real-time constraints.
 
-YOLOv8 introduces architectural improvements such as anchor-free detection and decoupled heads, making it suitable for modern real-world applications. This project explores YOLOv8’s capabilities and practical performance.
+**YOLOv8** introduces architectural improvements such as: 
+- **Anchor-free detection** 
+- **Decoupled heads**
+
+These enhancements make it highly suitable for **real-world applications**. This project explores YOLOv8’s **capabilities and practical performance**.
 
 ### Technology Stack
 - **Programming Language:** Python  
@@ -44,13 +47,13 @@ YOLOv8 introduces architectural improvements such as anchor-free detection and d
 - **Training Platform:** Google Colab (GPU) 
 
 ### Overview of YOLO
-YOLO (You Only Look Once) is a single-stage object detection algorithm that:
-- Divides the input image into grids
-- Predicts bounding boxes and class probabilities in one pass
-- Eliminates region proposal networks
-- Achieves real-time detection speed
+**YOLO (You Only Look Once)** is a **single-stage object detection algorithm** that:
+- Divides the input image into **grids**
+- Predicts **bounding boxes** and **class probabilities** in one pass
+- Eliminates **region proposal networks**
+- Achieves **real-time detection speed**
 
-YOLO processes the entire image at once, making it significantly faster than traditional two-stage detectors.
+YOLO processes the **entire image at once**, making it significantly faster than traditional **two-stage detectors**.
 
 ### Why YOLOv8?
 YOLOv8 is chosen due to the following advantages:
