@@ -57,12 +57,12 @@ YOLO processes the **entire image at once**, making it significantly faster than
 
 ### Why YOLOv8?
 YOLOv8 is chosen due to the following advantages:
-- Anchor-free object detection
-- Decoupled classification and localization heads
-- Higher mean Average Precision (mAP)
-- Faster training convergence
-- Better performance on multi-scale objects
-- Supports detection, segmentation, and classification tasks
+- **Anchor-free** object detection
+- **Decoupled classification** and **localization** heads
+- Higher mean **Average Precision** (mAP)
+- **Faster training convergence**
+- Better performance on **multi-scale objects**
+- Supports **detection, segmentation**, and **classification** tasks
 
 ### System Architecture
 The YOLOv8-based object detection system consists of:
@@ -72,65 +72,66 @@ The YOLOv8-based object detection system consists of:
 - **Data Augmentation:** Mosaic, MixUp, CutMix  
 - **Post-Processing:** Soft Non-Max Suppression (Soft-NMS)
 
-This architecture enables accurate and fast object detection.
+This architecture enables **accurate** and **fast object detection**.
 
 ### Dataset Description
 - Dataset is based on **COCO (Common Objects in Context)**
-- Contains multiple object categories such as people, animals, and daily-use objects
-- Images are annotated using bounding boxes in YOLO format
-- Dataset is split into training and validation sets
+- Contains **multiple object categories** such as **people, animals**, and **daily-use objects**
+- Images are annotated using **bounding boxes** in YOLO format
+- Dataset is split into **training and validation sets**
 
 ### Implementation Methodology
-- YOLOv8 Nano model is used for efficient training
-- Pre-trained weights are fine-tuned on the dataset
-- Training performed using GPU for faster convergence
-- OpenCV is used for visualization of detection results
-- Predictions include class label, confidence score, and bounding box
+- **YOLOv8 Nano model** is used for efficient training
+- **Pre-trained weights** are fine-tuned on the dataset
+- Training performed using **GPU** for **faster convergence**
+- **OpenCV** is used for **visualization** of detection results
+- Predictions include **class label, confidence score,** and **bounding box**
 
 ### Model Training
 Training process:
-1. Install Ultralytics YOLOv8 package  
-2. Load pre-trained YOLOv8 model  
+1. Install **Ultralytics YOLOv8** package  
+2. Load **pre-trained YOLOv8 model**  
 3. Train model on the dataset  
 4. Validate model performance  
-5. Save best model weights
+5. Save **best model weights**
 
 Training is conducted using **Google Colab with GPU support**.
 
 ### Real-Time Object Detection
 The trained model supports:
-- Image-based object detection
-- Video-based object detection
-- Webcam-based real-time detection
+- **Image-based object detection**
+- **Video-based object detection**
+- **Webcam-based real-time detection**
 
-Detected objects are displayed with bounding boxes, class names, and confidence scores.
+Detected objects are displayed with **bounding boxes, class names,** and **confidence scores**.
 
 ### Performance Analysis
-- Performs well on images and video frames
-- Successfully detects multiple objects in a single frame
-- Maintains real-time inference speed
+- Performs well on **images and video frames**
+- Successfully detects **multiple objects in a single frame**
+- Maintains **real-time inference speed**
 
 ### Limitations
-- Reduced accuracy for very small objects
-- Difficulty handling occluded objects
-- Performance decreases in cluttered backgrounds
-- Requires GPU for optimal real-time performance
-- Sensitive to hyperparameter selection
+- Reduced accuracy for **very small objects**
+- Difficulty handling **occluded objects**
+- Performance decreases in **cluttered backgrounds**
+- Requires **GPU for optimal real-time performance**
+- Sensitive to **hyperparameter selection**
 
 ### Applications
-- Smart surveillance systems
-- Autonomous vehicles
-- Traffic monitoring
-- Robotics
-- Retail analytics
-- Industrial automation
+- Smart **surveillance systems**
+- **Autonomous vehicles**
+- **Traffic monitoring**
+- **Robotics**
+- **Retail analytics**
+- **Industrial automation**
 
 ### Future Enhancements
-- Improve small object detection accuracy
-- Deploy model on edge devices
-- Integrate object tracking
-- Optimize using TensorRT / ONNX
-- Enhance occlusion handling
+- Improve **small object detection** accuracy
+- Deploy model on **edge devices**
+- Integrate **object tracking**
+- Enhance **occlusion handling**
 
 ### Conclusion
-This project presents a real-time object detection system using **YOLOv8**, achieving high accuracy and fast inference for detecting multiple objects in images and video streams. The results demonstrate YOLOv8’s effectiveness in balancing speed and precision for real-world applications. Although challenges such as small object detection and occlusion remain, the system proves to be reliable and scalable, with strong potential for further enhancements and deployment in practical computer vision applications.
+This project presents a **real-time object detection system using YOLOv8**, achieving **high accuracy** and **fast inference** for detecting multiple objects in images and video streams. 
+
+The results demonstrate YOLOv8’s effectiveness in balancing **speed and precision** for **real-world applications**. Although challenges such as **small object detection** and **occlusion** remain, the system proves to be **reliable** and **scalable**, with strong potential for further enhancements and deployment in practical computer vision applications.
